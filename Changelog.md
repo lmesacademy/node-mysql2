@@ -1,5 +1,39 @@
 # Changelog
 
+## [3.0.1](https://github.com/lmesacademy/node-mysql2/compare/v3.2.4...v3.0.1) (2023-05-03)
+
+
+### Features
+
+* cleanup buffer/string conversions in hashing/xor helpers that were failing in Bun ([a2392e2](https://github.com/lmesacademy/node-mysql2/commit/a2392e27de64630affb6e3f6af26f5c59e2e95f9))
+* maxVersion ssl option to tls.createSecureContext ([0c40ef9](https://github.com/lmesacademy/node-mysql2/commit/0c40ef9f596fa3bc4f046f523c3595fe7065fde3))
+
+
+### Bug Fixes
+
+* `ConnectionOptions` conflict between `mysql` and `mysql/promise` ([#1955](https://github.com/lmesacademy/node-mysql2/issues/1955)) ([eca8bda](https://github.com/lmesacademy/node-mysql2/commit/eca8bda9305ab07cf0e46f16f3f13bf1fd82787d))
+* add support for connectionUri in createPool ([d4d83a4](https://github.com/lmesacademy/node-mysql2/commit/d4d83a41b43e5a723c3698de063db63b56a6144d))
+* Add typings for Connection.promise(). ([#1949](https://github.com/lmesacademy/node-mysql2/issues/1949)) ([e3ca310](https://github.com/lmesacademy/node-mysql2/commit/e3ca3107cbae0050d307f02514598aff4e8ecd60))
+* add warning for not specifying charset when using JSON ([722d967](https://github.com/lmesacademy/node-mysql2/commit/722d96728437fc25ad1528e3cfc02941f78d0db7))
+* **connection:** ensure pooled connections get released ([ac78e29](https://github.com/lmesacademy/node-mysql2/commit/ac78e2963b8dfed7d3b1ddf92de4db255ec299fc))
+* edit comment for consistency ([ed189cb](https://github.com/lmesacademy/node-mysql2/commit/ed189cbf468434806da116ce669fc5512e8c2a13))
+* PoolConnection redundancy when extending Connection interface in TypeScript ([7c62d11](https://github.com/lmesacademy/node-mysql2/commit/7c62d1177e79b5063a11fa15a2ac4e3dc3e2a2ed))
+* remove accidental log in caching_sha2_password.js ([c1202b6](https://github.com/lmesacademy/node-mysql2/commit/c1202b673c8ba9f709c3ebc0d1717ccffca1bd4b))
+* **server:** Added missing encoding argument to server-handshake ([#1976](https://github.com/lmesacademy/node-mysql2/issues/1976)) ([a4b6b22](https://github.com/lmesacademy/node-mysql2/commit/a4b6b223434d1cbdb5af9141cf3bd085459bb6b8))
+* **types:** add decimalNumbers to createConnection/createPool typings. fixes [#1803](https://github.com/lmesacademy/node-mysql2/issues/1803) ([#1817](https://github.com/lmesacademy/node-mysql2/issues/1817)) ([bb48462](https://github.com/lmesacademy/node-mysql2/commit/bb48462db7b83bd4825a3d53e192e5363139ec3c))
+* **typings:** Add the infileStreamFactory option to the type definition ([bf9cc4c](https://github.com/lmesacademy/node-mysql2/commit/bf9cc4c41e72f4a9014659a22b131739524bda1c))
+* update `lru-cache` reset method to clear ([114f266](https://github.com/lmesacademy/node-mysql2/commit/114f266b18802e52d6b130c2cf379f61a996c2b0))
+* use PoolOptions type instead of PoolClusterOptions ([b275d55](https://github.com/lmesacademy/node-mysql2/commit/b275d55bbe48d29da4f7a85cee7c08b373f348f6))
+* webpack projects no longer show warning for cardinal dependency ([26c56ae](https://github.com/lmesacademy/node-mysql2/commit/26c56ae64846814eb8234c0d352871a7b6651d66))
+* when port is pased as a string convert it to a number (Bun's net.connect does not automatically convert this) ([703ecb2](https://github.com/lmesacademy/node-mysql2/commit/703ecb2f788cf32acb1b49c7786ff6845640e215))
+
+
+### Miscellaneous Chores
+
+* release 3.0.0 ([11692b2](https://github.com/lmesacademy/node-mysql2/commit/11692b223ff26784089f444ca6291295bd0e405e))
+* release 3.0.1 ([d5a6b2c](https://github.com/lmesacademy/node-mysql2/commit/d5a6b2ccccc7db4176c880e83c70ccd0be4ad81e))
+* v3.0.0-rc.1 changes ([1b684bb](https://github.com/lmesacademy/node-mysql2/commit/1b684bbf8047200e5de5dd18874872880237de2f))
+
 ## [3.2.4](https://github.com/sidorares/node-mysql2/compare/v3.2.3...v3.2.4) (2023-04-25)
 
 
