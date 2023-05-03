@@ -1,5 +1,34 @@
 # Changelog
 
+## [3.2.4](https://github.com/sidorares/node-mysql2/compare/v3.2.3...v3.2.4) (2023-04-25)
+
+
+### Bug Fixes
+
+* **server:** Added missing encoding argument to server-handshake ([#1976](https://github.com/sidorares/node-mysql2/issues/1976)) ([a4b6b22](https://github.com/sidorares/node-mysql2/commit/a4b6b223434d1cbdb5af9141cf3bd085459bb6b8))
+
+## [3.2.3](https://github.com/sidorares/node-mysql2/compare/v3.2.2...v3.2.3) (2023-04-16)
+
+
+### Bug Fixes
+
+* **types:** add decimalNumbers to createConnection/createPool typings. fixes [#1803](https://github.com/sidorares/node-mysql2/issues/1803) ([#1817](https://github.com/sidorares/node-mysql2/issues/1817)) ([bb48462](https://github.com/sidorares/node-mysql2/commit/bb48462db7b83bd4825a3d53e192e5363139ec3c))
+
+## [3.2.2](https://github.com/sidorares/node-mysql2/compare/v3.2.1...v3.2.2) (2023-04-16)
+
+
+### Bug Fixes
+
+* `ConnectionOptions` conflict between `mysql` and `mysql/promise` ([#1955](https://github.com/sidorares/node-mysql2/issues/1955)) ([eca8bda](https://github.com/sidorares/node-mysql2/commit/eca8bda9305ab07cf0e46f16f3f13bf1fd82787d))
+
+## [3.2.1](https://github.com/sidorares/node-mysql2/compare/v3.2.0...v3.2.1) (2023-04-13)
+
+
+### Bug Fixes
+
+* Add typings for Connection.promise(). ([#1949](https://github.com/sidorares/node-mysql2/issues/1949)) ([e3ca310](https://github.com/sidorares/node-mysql2/commit/e3ca3107cbae0050d307f02514598aff4e8ecd60))
+* PoolConnection redundancy when extending Connection interface in TypeScript ([7c62d11](https://github.com/sidorares/node-mysql2/commit/7c62d1177e79b5063a11fa15a2ac4e3dc3e2a2ed))
+
 ## [3.2.0](https://github.com/sidorares/node-mysql2/compare/v3.1.2...v3.2.0) (2023-03-03)
 
 
